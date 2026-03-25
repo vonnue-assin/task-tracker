@@ -6,16 +6,14 @@ import { ReactComponent as OganzoLogo } from "../../assets/svg/organization-svgr
 
 import "./styles.css";
 
-const Sidenavbar: React.FC = () => {
+const Sidenavbar = () => {
   return (
     <div className="sidenavbar">
-      {/* Logo Section */}
       <div className="organzo-card">
         <OganzoLogo className="organzo-logo" width={30} height={30} />
         <h2 className="organizo-title">ORGANIZO</h2>
       </div>
 
-      {/* Navigation Links */}
       <nav className="nav-links">
         {sidebarLinks.map((link) => (
           <div className="image-card" key={link.name}>
