@@ -1,11 +1,17 @@
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
+import { Home } from "./pages/home";
+
+import "./App.css";
+
+const App = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Home />
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

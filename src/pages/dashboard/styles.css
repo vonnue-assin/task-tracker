@@ -1,0 +1,15 @@
+.image-card {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.dashboard-title {
+  margin: 0px;
+}
+
+.dashboard {
+    margin: 20px;
+}

@@ -1,0 +1,37 @@
+.organizo-title {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 28px;
+}
+
+.organzo-card {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+
+.sidenavbar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  height: 100vh;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  text-align: start;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  font-weight: bold;
+}
