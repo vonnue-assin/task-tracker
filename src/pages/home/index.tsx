@@ -1,12 +1,14 @@
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
+import Header from "../../components/header";
 import Sidenavbar from "../../components/sidenavbar";
 import { Dashboard, MyTasks } from "../../pages";
 import { routes } from "../../router";
 
 export const Home = () => {
   return (
-    <div style={{ display: "flex" }}>
+    <div>
+      <Header />
       <Sidenavbar />
 
       <div style={{ flex: 1 }}>

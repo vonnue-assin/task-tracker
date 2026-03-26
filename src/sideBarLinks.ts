@@ -1,6 +1,6 @@
-import taskImage from "./assets/images/checklists.png";
-import dashboardImage from "./assets/images/dashboard.png";
-import notificationImage from "./assets/images/notification.png";
+import taskImage from "./assets/images/icons8-talk-about-tasks-50.png";
+import dashboardImage from "./assets/images/icons8-dashboard-48.png";
+import notificationImage from "./assets/images/icons8-alert-50.png";
 
 export const sidebarLinks = [
   {
