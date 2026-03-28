@@ -1,22 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-
 import Header from "../../components/header";
 import Sidenavbar from "../../components/sidenavbar";
-import { Dashboard, MyTasks } from "../../pages";
-import { routes } from "../../router";
+
+import "./styles.css";
 
 export const Home = () => {
   return (
-    <div>
+    <div className="home-container">
       <Header />
       <Sidenavbar />
-
-      <div style={{ flex: 1 }}>
-        <Routes>
-          <Route path={routes.dashboard} element={<Dashboard />} />
-          <Route path={routes.myTasks} element={<MyTasks />} />
-        </Routes>
-      </div>
     </div>
   );
 };

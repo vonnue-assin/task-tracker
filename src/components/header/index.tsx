@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
+import { Task } from "../../types";
 import Modal from "../modal";
-import NewTaskForm, { Task } from "../newTasksForm";
+import NewTaskForm from "../newTasksForm";
+import AvatarDropdown from "../profileDropdown";
 import SearchBar from "../searchBar";
 
 import avatarImage from "../../assets/images/icons8-user-50.png";
@@ -29,13 +31,7 @@ const Header: React.FC = () => {
         </button>
 
         <div className="header-right">
-          <img
-            src={avatarImage}
-            alt="User Avatar"
-            width={40}
-            height={40}
-            className="avatar"
-          />
+          <AvatarDropdown avatar={avatarImage} />
         </div>
       </div>
 

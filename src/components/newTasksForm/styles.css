@@ -40,3 +40,9 @@
   transition: all 0.2s ease;
   font-weight: bold;
 }
+
+.ts-card {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}

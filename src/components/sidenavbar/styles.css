@@ -1,86 +1,96 @@
-.organizo-title {
-  font-family: "Courier New", Courier, monospace;
-  display: flex;
-  justify-content: flex-start;
-  font-size: 28px;
-}
-
-.organzo-card {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  border-bottom: 1px solid #ccc;
-  align-items: center;
-}
-
 .sidenavbar {
   width: 300px;
   padding: 20px;
-  background-color: #333;
+  background-color: #2f394d;
   color: #fff;
-  border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-left: 15px;
   display: flex;
   flex-direction: column;
-  height: 98vh;
-  margin-left: 10px;
-  margin-top: -75px;
+  margin-top: -93px;
+  height: 80vh;
   margin-bottom: 10px;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-top: 45px;
-}
-
-.link {
-  color: #fff;
-  text-decoration: none;
-  text-align: start;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.link:hover {
-  color: #000;
-  text-decoration: underline;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .organzo-card {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+}
+
+.organizo-title {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.whole-logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 20px;
 }
 
 .nav-links {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 20px;
 }
 
 .image-card {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 12px;
+  padding: 10px;
   border-radius: 10px;
-  transition:
-    background-color 0.2s,
-    box-shadow 0.2s;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
 }
 
 .image-card:hover {
   background-color: #f5f5f5;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
   color: #000;
 }
 
-.image-card img {
-  border-radius: 5px;
+.link-text {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.bottom-links {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottom-item {
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.bottom-item:hover {
+  background-color: #f5f5f5;
+  color: #000;
 }
