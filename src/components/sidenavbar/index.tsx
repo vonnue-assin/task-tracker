@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import { sidebarLinks } from "../../sideBarLinks";
 
 import settingsImage from "../../assets/images/play.png";
@@ -8,11 +7,11 @@ import { ReactComponent as OrganizoLogo } from "../../assets/svg/organizo.svg";
 
 import "./styles.css";
 
-const Sidenavbar = () => {
+const Sidenavbar: React.FC = () => {
   return (
-    <div className="sidenavbar">
+    <aside className="sidenavbar">
       <div className="organzo-card">
-        <OrganizoLogo className="whole-logo"/>
+        <OrganizoLogo className="whole-logo" />
       </div>
 
       <div className="nav-card">
@@ -27,21 +26,17 @@ const Sidenavbar = () => {
 
         <div className="bottom-links">
           <Link to="/settings" className="bottom-item">
-            <img
-              src={settingsImage}
-              alt="settingsImage"
-              height={30}
-              width={30}
-            />
-            Settings
+            <img src={settingsImage} alt="settings" width={30} height={30} />
+            <span>Settings</span>
           </Link>
+
           <Link to="/logout" className="bottom-item logout">
-            <img src={logoutImage} alt="settingsImage" width={30} height={30} />
-            Log Out
+            <img src={logoutImage} alt="logout" width={30} height={30} />
+            <span>Log Out</span>
           </Link>
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 

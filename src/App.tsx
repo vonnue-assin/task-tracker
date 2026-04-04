@@ -1,27 +1,22 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-import Login from "./components/login";
-import { Home } from "./pages/home";
+import Layout from "./components/Layout";
+import { Dashboard, Home, MyTasks } from "./pages";
 
-import "./App.css";
-
-const App = () => {
-  const isAuthenticated = localStorage.getItem("token");
-
+function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Login />} />
-
-          <Route
-            path="/home"
-            element={isAuthenticated ? <Home /> : <Navigate to="/" />}
-          />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/my-tasks" element={<MyTasks />} />
+          {/* <Route path="/settings" element={<Settings />} />
+          <Route path="/logout" element={<Logout />} /> */}
+        </Route>
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;

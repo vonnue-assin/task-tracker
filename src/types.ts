@@ -7,3 +7,8 @@ export type Task = {
   assignee: string;
   description: string;
 };
+
+export type LoginForm = {
+  email: string;
+  password: string;
+};

@@ -1,0 +1,36 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  border: 15px solid #2f394d;
+}
+
+.sidenavbar {
+  background-color: #1f2937;
+  color: white;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.right-section > :first-child {
+  height: 70px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+.page-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f9fafb;
+}

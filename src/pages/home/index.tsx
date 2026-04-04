@@ -1,13 +1,7 @@
 import Header from "../../components/header";
-import Sidenavbar from "../../components/sidenavbar";
 
 import "./styles.css";
 
-export const Home = () => {
-  return (
-    <div className="home-container">
-      <Header />
-      <Sidenavbar />
-    </div>
-  );
+export const Home: React.FC = () => {
+  return <div ></div>;
 };
